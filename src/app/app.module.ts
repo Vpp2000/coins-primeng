@@ -7,6 +7,8 @@ import {CardModule} from "primeng/card";
 import { CoinsComponent } from './components/coins/coins.component';
 import {TableModule} from "primeng/table";
 import { HttpClientModule } from "@angular/common/http";
+import {InputTextModule} from "primeng/inputtext";
+import {ReactiveFormsModule} from "@angular/forms";
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,9 @@ import { HttpClientModule } from "@angular/common/http";
     AppRoutingModule,
     CardModule,
     TableModule,
-    HttpClientModule
+    InputTextModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

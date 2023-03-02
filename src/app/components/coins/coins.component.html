@@ -1,7 +1,12 @@
 
 <div class="card">
-  <h5>Single Column</h5>
-  <p-table [value]="coins" [tableStyle]="{'min-width': '60rem'}">
+
+  <span class="p-float-label my-5">
+      <input [formControl]="coinNameControl" id="float-input" type="text" pInputText class="w-full">
+      <label for="float-input" class="font-bold">Buscar por nombre</label>
+  </span>
+
+  <p-table [value]="filteredCoins" [tableStyle]="{'min-width': '60rem'}">
     <ng-template pTemplate="header">
       <tr>
         <th *ngFor="let column of columns"  style="width:20%">{{column}} </th>
